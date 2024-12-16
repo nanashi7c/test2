@@ -1,78 +1,64 @@
-/* 全体のスタイル */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
-}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポケモングローバルリンク</title>
+    <link rel="stylesheet" href="styles.css"> <!-- CSSの外部ファイルをリンク -->
+</head>
+<body>
+    <!-- ヘッダー部分 -->
+    <header>
+        <div class="header-logo">
+            <img src="logo.png" alt="ポケモングローバルリンク ロゴ">
+        </div>
+    </header>
 
-/* ヘッダー */
-header {
-    background-color: #b91c1c;
-    text-align: center;
-    padding: 10px;
-}
-.header-logo img {
-    width: 200px;
-}
+    <!-- メインのページレイアウト -->
+    <div class="container">
+        <!-- 左側のサイドバー -->
+        <aside class="sidebar">
+            <ul class="menu">
+                <li>マイページ</li>
+                <li>友達マイルクラブ</li>
+                <li>トレーニングバトル</li>
+                <li>インターネット大会</li>
+                <li>アカウント設定</li>
+            </ul>
+            <div class="support-section">
+                <p>サポート</p>
+                <p>ポケモングローバルリンクに関するお問い合わせはこちら</p>
+            </div>
+        </aside>
 
-/* メインコンテナ */
-.container {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-}
+        <!-- 中央のメインコンテンツ -->
+        <main class="main-content">
+            <section class="banner">
+                <img src="banner.png" alt="バナー画像">
+            </section>
+            <section class="info">
+                <h2>インフォメーション</h2>
+                <div class="news">
+                    <p><span class="new">NEW</span> 2014/XX/XX 「ポケモンXY・オメガルビー・アルファサファイア」のイベント情報更新！</p>
+                    <p><span class="new">NEW</span> 2014/XX/XX プレゼント企画開催中！</p>
+                    <p>2014/XX/XX レーティングバトル シーズン1 スタート！</p>
+                </div>
+            </section>
+        </main>
 
-/* 左側サイドバー */
-.sidebar {
-    width: 20%;
-    background-color: #e1e1e1;
-    padding: 10px;
-}
-.menu li {
-    list-style: none;
-    margin: 10px 0;
-    font-weight: bold;
-}
-.support-section {
-    margin-top: 20px;
-    font-size: 14px;
-}
+        <!-- 右側のサイドコンテンツ -->
+        <aside class="sidebar-right">
+            <h3>イベントカレンダー</h3>
+            <div class="event">
+                <img src="event.png" alt="イベント画像">
+                <p>ポケモンXY・オメガルビー・アルファサファイア 新イベント開催！</p>
+            </div>
+        </aside>
+    </div>
 
-/* 中央のメインコンテンツ */
-.main-content {
-    width: 55%;
-    background-color: #ffffff;
-    padding: 15px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
-}
-.banner img {
-    width: 100%;
-}
-.info .new {
-    color: red;
-    font-weight: bold;
-}
-.news p {
-    margin: 10px 0;
-}
-
-/* 右側のサイドバー */
-.sidebar-right {
-    width: 20%;
-    background-color: #e1e1e1;
-    padding: 10px;
-    text-align: center;
-}
-.event img {
-    width: 100%;
-}
-
-/* フッター */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-}
+    <!-- フッター部分 -->
+    <footer>
+        <p>&copy; 2024 Pokémon Global Link. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
